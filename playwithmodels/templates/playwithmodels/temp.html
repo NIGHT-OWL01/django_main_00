@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+
+statement 1<br>
+<script type="text/javascript">
+	/*alert('stopped execution!')
+	console.log('executed');
+	document.write('javascript Here'
+		+'here alsso'+51
+		);*/
+</script>
+
+<script type="text/javascript">
+/*	x=Array();
+	x.push('a')
+	x.push('b')
+	y={'name':'banda','age':17}
+	z='a'*123
+	z='a'+123
+	document.write(y['name'])//or y.name
+	document.write(x)
+	document.write(z)
+	document.write(typeof(z))*/
+</script>
+
+<script type="text/javascript">
+	/*function
+	speed=60
+	function change(){
+		//by default every variable in function is global use 'var' to make it local 
+		speed=120;
+		var speeds=90;
+	}
+	change()
+	document.write(speed);*/
+</script>
+
+<script type="text/javascript">
+	/*condition
+	value=1
+	if(value>12 || value==12){
+		document.write('first if :'+value);
+	}else if(value<=12 && value==12){
+		document.write('second if'+value);
+	}else{
+		document.write('default');
+	}*/
+</script>
+
+<script type="text/javascript">
+	/*loop
+	for (var i = 10; i >= 0; i--) {
+		if (i==2) continue;
+		if(i==0)break;
+		document.write(i)
+	}
+	//never use continue in while before increment
+	j=0
+	while(j<10){
+		j+=1
+		if (j==2) continue;
+		if(j==8)break;
+		console.log(j);
+		
+	}*/
+</script>
+
+<script type="text/javascript">
+	/*document.write('in the script')
+	function animalParty(nam){
+		this.x=0;
+		this.party=function (){
+			this.x=this.x+ 1;
+			console.log(nam +' : '+this.x)
+		}
+	}
+	an1= new animalParty('perry');
+	an2= new animalParty('flota');
+	an1.party()
+	an2.party()
+	an1.party()
+	an1.party()
+	an2.party()*/
+</script>
+
+<script type="text/javascript">
+	function coffe(status){
+		this.coffe=status;
+		this.coffepot='empty';
+		this.refill=function (){
+			if (this.coffepot=='empty'){
+				this.coffepot='full';
+			}
+			this.coffe='full';
+			console.log('coffepot status :'+ this.coffepot)
+			console.log('coffe status :'+ this.coffe)
+		}
+	}
+	coffe= new coffe('empty')
+	coffe.refill()
+</script>
+statement 2
+
+
+
+
+
+
+
+
+
+<noscript>
+	your browser not support javascript
+</noscript>
+</body>
+</html>

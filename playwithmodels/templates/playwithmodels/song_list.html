@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body bgcolor="pink">
+	User:{{user.username}}
+	<a href="{% url 'playwithmodels:Home' %}">Go back</a>
+	<p><h2>List of songs</h2>
+		<ul>
+		{% for song in song_list%}
+			<a href='{% url "playwithmodels:UpdateSong" song.id%}'><li>{{song}}</li></a>Made By:{{song.user}}<br>
+			{% if song.user_id == request.user.id %}
+				{{song.user_id}}
+			{% endif %}
+		<hr>{% endfor %}
+		</ul>
+	</p>
+
+</body>
+</html>
